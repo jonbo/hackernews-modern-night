@@ -235,6 +235,24 @@
   .ind img[width="400"] {
     width: 41px !important;
   }
+  .ind img[width="440"] {
+    width: 45px !important;
+  }
+  .ind img[width="480"] {
+    width: 49px !important;
+  }
+  .ind img[width="520"] {
+    width: 53px !important;
+  }
+  .ind img[width="560"] {
+    width: 57px !important;
+  }
+  .ind img[width="600"] {
+    width: 61px !important;
+  }
+  .ind img[width="640"] {
+    width: 65px !important;
+  }
 
   .comment-tree tr:nth-child(5n) .ind {
     background: rgb(74, 184, 228);
