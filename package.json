@@ -1,5 +1,6 @@
 {
-  "name": "HNews Mobile Dark Blue",
+  "name": "HNews-Mobile-Dark-Blue",
+  "private": true,
   "version": "1.1.0",
   "license": "MIT",
   "dependencies": {
