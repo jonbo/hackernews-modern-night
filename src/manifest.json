@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "HNews Mobile Dark Blue",
+  "version": "1.1",
+
+  "description": "Adds styling to HNews Mobile.",
+
+  "content_scripts": [
+    {
+      "matches": ["*://news.ycombinator.com/*"],
+      "css": ["hnews.css"],
+      "run_at": "document_start"
+    }
+  ]
+}

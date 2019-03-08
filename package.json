@@ -1,0 +1,13 @@
+{
+  "name": "HNews Mobile Dark Blue",
+  "version": "1.1.0",
+  "license": "MIT",
+  "dependencies": {
+    "web-ext": "^3.0.0"
+  },
+  "scripts": {
+    "start": "web-ext run -s ./src --start-url https://news.ycombinator.com/",
+    "build": "web-ext build -s ./src",
+    "sign": "web-ext sign -s ./src --api-key=$WEBEXT_KEY --api-secret=WEBEXT_SECRET"
+  }
+}
