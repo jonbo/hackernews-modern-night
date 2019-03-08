@@ -1,7 +1,7 @@
 {
   "name": "HNews-Mobile-Dark-Blue",
   "private": true,
-  "version": "1.1.0",
+  "version": "1.1.1",
   "license": "MIT",
   "dependencies": {
     "web-ext": "^3.0.0"
