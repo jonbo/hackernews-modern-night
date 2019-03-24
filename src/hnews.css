@@ -71,8 +71,58 @@
     color: rgb(74, 184, 228);
   }
 
+  /* The top navbar */
   td[bgcolor="#ff6600"] {
     background: rgb(74, 184, 228);
+
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  .itemlist .subtext {
+    user-select: none;
+    -moz-user-select: none;
+  }
+  .itemlist .subtext > a[href^="item"]:last-child {
+    float: right;
+    padding-right: 2px;
+  }
+
+  .fatitem {
+    height: auto;
+
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  .fatitem .athing .title:not([valign="top"]) {
+    background: #333;
+    font-weight: bold;
+  }
+  .fatitem tr[style="height:10px"] {
+    display: none;
+  }
+  [action="comment"] textarea {
+    height: 20px;
+    background: #222;
+    color: white;
+    font-size: 14px;
+    border-radius: 4px;
+  }
+  [action="comment"] textarea:focus {
+    height: 300px;
+  }
+  [action="comment"] br {
+    display: none;
+  }
+  [action="comment"] input[type="submit"] {
+    display: none;
+  }
+  [action="comment"] textarea:focus ~ input[type="submit"] {
+    display: inline;
+  }
+  #pagespace {
+    display: none;
   }
   span[id^="score"] {
     color: rgb(74, 184, 228);
@@ -146,9 +196,8 @@
     font-size: 102%;
   }
 
-  .fatitem {
-    background: #333;
-    box-shadow: 1px 1px 4px;
+  .fatitem ~ br {
+    display: none;
   }
   .fatitem a {
     color: rgb(74, 184, 228);
@@ -194,12 +243,20 @@
 
   table[bgcolor="#f6f6ef"] {
     background: rgb(166, 230, 255);
+    background: #f3f9fb;
   }
 
   .morelink {
     color: rgb(74, 184, 228) !important;
     padding: 5px;
     border-bottom: 3px solid rgb(74, 184, 228);
+  }
+
+  .fatitem .subtext > a {
+    color: #87c0cd;
+  }
+  .fatitem .subtext > a:last-child {
+    color: #ccc;
   }
 
   .ind img[width="0"] {
@@ -268,5 +325,48 @@
   }
   .comment-tree tr:nth-child(5n + 4) .ind {
     background: rgb(74, 104, 218);
+  }
+
+  @keyframes fade {
+    0% {
+    }
+    100% {
+      max-height: 55px;
+    }
+  }
+  @keyframes hide {
+    99% {
+    }
+    100% {
+      /* this is a hack for display: none, to get fatitem to scroll back to the top always */
+      position: fixed;
+    }
+  }
+  body.scrolled_down .fatitem {
+    display: block;
+    /* height: 55px; */
+    animation: fade 1000ms both;
+    overflow-y: hidden;
+  }
+  body.scrolled_down .fatitem tr:nth-of-type(n + 3) {
+    animation: hide 1000ms both;
+    animation-delay: 1000ms;
+  }
+  .fatitem {
+    background: #333;
+    box-shadow: 1px 1px 4px;
+    margin-bottom: 1px;
+
+    width: 100%;
+
+    /* fixes some cases where post height is bigger than viewport */
+    display: block;
+    max-height: 80vh;
+    overflow-y: auto;
+    /* /fix */
+  }
+
+  .fatitem pre {
+    max-width: 88vw;
   }
 }
