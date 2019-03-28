@@ -231,6 +231,10 @@
   .comment pre {
     min-width: 98%;
   }
+  /* fix issue with some comments not being full width */
+  .comtr .default {
+    width: 100%;
+  }
 
   .comtr .default > div:first-child {
     background: linear-gradient(90deg, #222222ff, #00000000);
