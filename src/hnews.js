@@ -29,7 +29,7 @@ document.addEventListener("scroll", function onScroll(e) {
     direction = SCROLLED_DOWN;
     relativePageY = pageY;
     if (previousDirection !== direction) onScrollDirectionChange(direction);
-  } else if (pageY < relativePageY - SCROLL_THRESHOLD * 3) {
+  } else if (pageY < relativePageY - SCROLL_THRESHOLD * 10) {
     direction = SCROLLED_UP;
     relativePageY = pageY;
     if (previousDirection !== direction) onScrollDirectionChange(direction);

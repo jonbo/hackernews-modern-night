@@ -331,30 +331,12 @@
     background: rgb(74, 104, 218);
   }
 
-  @keyframes fade {
-    0% {
-    }
-    100% {
-      max-height: 55px;
-    }
-  }
-  @keyframes hide {
-    99% {
-    }
-    100% {
-      /* this is a hack for display: none, to get fatitem to scroll back to the top always */
-      position: fixed;
-    }
-  }
   body.scrolled_down .fatitem {
     display: block;
-    /* height: 55px; */
-    animation: fade 1000ms both;
     overflow-y: hidden;
   }
   body.scrolled_down .fatitem tr:nth-of-type(n + 3) {
-    animation: hide 1000ms both;
-    animation-delay: 1000ms;
+    display: none;
   }
   .fatitem {
     background: #333;
