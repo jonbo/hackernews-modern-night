@@ -66,7 +66,8 @@
     U+FEFF, U+FFFD;
 }
 
-td {
+/* default main color of text */
+#hnmain td {
   color: rgb(74, 184, 228);
 }
 
@@ -78,6 +79,7 @@ td[bgcolor="#ff6600"] {
   top: 0;
   z-index: 1;
 }
+/* list of posts */
 .itemlist {
   width: 100%;
 }
@@ -85,11 +87,13 @@ td[bgcolor="#ff6600"] {
   user-select: none;
   -moz-user-select: none;
 }
+/* the "[n] comments" text */
 .itemlist .subtext > a[href^="item"]:last-child {
   float: right;
   padding-right: 2px;
 }
 
+/* On the post page, the expanded post information including post body and comment box */
 .fatitem {
   height: auto;
 
@@ -176,7 +180,8 @@ span[id^="score"] {
   border-bottom: 2px solid #111;
   padding-bottom: 8px;
 }
-.subtext {
+/* everything but the post title */
+.itemlist .subtext {
   padding-bottom: 8px;
   font-size: 70%;
 }
@@ -248,7 +253,6 @@ span[id^="score"] {
 }
 
 table[bgcolor="#f6f6ef"] {
-  background: rgb(166, 230, 255);
   background: #f3f9fb;
 }
 
