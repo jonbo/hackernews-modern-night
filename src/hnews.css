@@ -15,10 +15,17 @@ td[bgcolor="#ff6600"] {
 .itemlist {
   width: 100%;
 }
-.itemlist .subtext {
+/* everything but the post title */
+#hnmain .itemlist .subtext {
+  /* make it text unselectable for easier long pressing on mobile */
   user-select: none;
   -moz-user-select: none;
+
+  padding-bottom: 8px;
+  font-size: 70%;
+  color: #ccc;
 }
+
 /* the "[n] comments" text */
 .itemlist .subtext > a[href^="item"]:last-child {
   float: right;
@@ -117,11 +124,7 @@ span[id^="score"] {
   border-bottom: 2px solid #111;
   padding-bottom: 8px;
 }
-/* everything but the post title */
-.itemlist .subtext {
-  padding-bottom: 8px;
-  font-size: 70%;
-}
+
 .itemlist .rank {
   display: none;
 }
@@ -134,10 +137,12 @@ span[id^="score"] {
   color: #aaa;
   font-size: 80%;
 }
+/* post title on list of posts */
 .athing .storylink {
   color: #eee;
   font-family: "Roboto", sans-serif;
   font-size: 102%;
+  text-shadow: 0 0 3px #000;
 }
 
 .fatitem ~ br {
