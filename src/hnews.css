@@ -66,293 +66,294 @@
     U+FEFF, U+FFFD;
 }
 
-@media only screen and (max-width: 750px) {
-  td {
-    color: rgb(74, 184, 228);
-  }
+td {
+  color: rgb(74, 184, 228);
+}
 
-  /* The top navbar */
-  td[bgcolor="#ff6600"] {
-    background: rgb(74, 184, 228);
+/* The top navbar */
+td[bgcolor="#ff6600"] {
+  background: rgb(74, 184, 228);
 
-    position: sticky;
-    top: 0;
-    z-index: 1;
-  }
-  .itemlist .subtext {
-    user-select: none;
-    -moz-user-select: none;
-  }
-  .itemlist .subtext > a[href^="item"]:last-child {
-    float: right;
-    padding-right: 2px;
-  }
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.itemlist {
+  width: 100%;
+}
+.itemlist .subtext {
+  user-select: none;
+  -moz-user-select: none;
+}
+.itemlist .subtext > a[href^="item"]:last-child {
+  float: right;
+  padding-right: 2px;
+}
 
-  .fatitem {
-    height: auto;
+.fatitem {
+  height: auto;
 
-    position: sticky;
-    top: 0;
-    z-index: 1;
-  }
-  .fatitem .athing .title:not([valign="top"]) {
-    background: #333;
-    font-weight: bold;
-  }
-  .fatitem tr[style="height:10px"] {
-    display: none;
-  }
-  [action="comment"] textarea {
-    height: 20px;
-    background: #222;
-    color: white;
-    font-size: 14px;
-    border-radius: 4px;
-  }
-  [action="comment"] textarea:focus {
-    height: 300px;
-  }
-  [action="comment"] br {
-    display: none;
-  }
-  [action="comment"] input[type="submit"] {
-    display: none;
-  }
-  [action="comment"] textarea:focus ~ input[type="submit"] {
-    display: inline;
-  }
-  #pagespace {
-    display: none;
-  }
-  span[id^="score"] {
-    color: rgb(74, 184, 228);
-  }
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.fatitem .athing .title:not([valign="top"]) {
+  background: #333;
+  font-weight: bold;
+}
+.fatitem tr[style="height:10px"] {
+  display: none;
+}
+[action="comment"] textarea {
+  height: 20px;
+  background: #222;
+  color: white;
+  font-size: 14px;
+  border-radius: 4px;
+}
+[action="comment"] textarea:focus {
+  height: 300px;
+}
+[action="comment"] br {
+  display: none;
+}
+[action="comment"] input[type="submit"] {
+  display: none;
+}
+[action="comment"] textarea:focus ~ input[type="submit"] {
+  display: inline;
+}
+#pagespace {
+  display: none;
+}
+span[id^="score"] {
+  color: rgb(74, 184, 228);
+}
 
-  .pagetop {
-    font-family: "Roboto";
-    font-size: 95% !important;
-  }
-  .pagetop .hnname {
-    font-weight: bold;
-    font-size: 130%;
-  }
-  .votearrow {
-    transform: scale(0.8, 0.8) !important;
-    margin-right: 0;
-  }
+.pagetop {
+  font-family: "Roboto";
+  font-size: 95% !important;
+}
+.pagetop .hnname {
+  font-weight: bold;
+  font-size: 130%;
+}
+.votearrow {
+  transform: scale(0.8, 0.8) !important;
+  margin-right: 0;
+}
 
-  .itemlist,
-  .fatitem,
-  .comment-tree {
-    border-top: 2px solid #000;
-    border-bottom: 2px solid #000;
-  }
+.itemlist,
+.fatitem,
+.comment-tree {
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
 
-  .itemlist {
-    background: #333;
-  }
-  .itemlist a u,
-  .itemlist .hnmore a {
-    color: white !important;
-  }
+.itemlist {
+  background: #333;
+}
+.itemlist a u,
+.itemlist .hnmore a {
+  color: white !important;
+}
 
-  .itemlist a[href^="item?id="],
-  .subtext a[href^="item?id="] {
-    color: #ccc;
-  }
+.itemlist a[href^="item?id="],
+.subtext a[href^="item?id="] {
+  color: #ccc;
+}
 
-  .itemlist .athing:nth-child(2n),
-  .itemlist .athing:nth-child(2n) + tr {
-    background: #222;
-  }
+.itemlist .athing:nth-child(2n),
+.itemlist .athing:nth-child(2n) + tr {
+  background: #222;
+}
 
-  .itemlist .athing:nth-child(2n) td {
-    border-top: 2px solid #111;
-    padding-top: 2px;
-  }
-  .itemlist .athing:nth-child(2n) + tr td {
-    border-bottom: 2px solid #111;
-    padding-bottom: 8px;
-  }
-  .subtext {
-    padding-bottom: 8px;
-    font-size: 70%;
-  }
-  .itemlist .rank {
-    display: none;
-  }
+.itemlist .athing:nth-child(2n) td {
+  border-top: 2px solid #111;
+  padding-top: 2px;
+}
+.itemlist .athing:nth-child(2n) + tr td {
+  border-bottom: 2px solid #111;
+  padding-bottom: 8px;
+}
+.subtext {
+  padding-bottom: 8px;
+  font-size: 70%;
+}
+.itemlist .rank {
+  display: none;
+}
 
-  .itemlist .spacer {
-    display: none;
-  }
+.itemlist .spacer {
+  display: none;
+}
 
-  .athing .title .rank {
-    color: #aaa;
-    font-size: 80%;
-  }
-  .athing .storylink {
-    color: #eee;
-    font-family: "Roboto";
-    font-size: 102%;
-  }
+.athing .title .rank {
+  color: #aaa;
+  font-size: 80%;
+}
+.athing .storylink {
+  color: #eee;
+  font-family: "Roboto";
+  font-size: 102%;
+}
 
-  .fatitem ~ br {
-    display: none;
-  }
-  .fatitem a {
-    color: rgb(74, 184, 228);
-  }
-  .fatitem td {
-    color: rgb(236, 245, 255);
-  }
-  .fatitem tr:nth-child(4) td {
-    font-size: 70% !important;
-  }
-  .comment-tree {
-    background: #333;
-    min-width: 100%;
-  }
-  .comment-tree .comment a {
-    max-width: 70vw !important;
-  }
-  .athing.comtr:nth-child(2n) td {
-    background: #222;
-  }
-  .commtext {
-    color: #ccc;
-  }
-  .comment {
-    max-width: 98% !important;
-    font-size: 85%;
-  }
-  .comment a {
-    color: rgb(74, 184, 228) !important;
-  }
-  .comment pre {
-    min-width: 98%;
-  }
-  /* fix issue with some comments not being full width */
-  .comtr .default {
-    width: 100%;
-  }
+.fatitem ~ br {
+  display: none;
+}
+.fatitem a {
+  color: rgb(74, 184, 228);
+}
+.fatitem td {
+  color: rgb(236, 245, 255);
+}
+.fatitem tr:nth-child(4) td {
+  font-size: 70% !important;
+}
+.comment-tree {
+  background: #333;
+  min-width: 100%;
+}
+.comment-tree .comment a {
+  max-width: 70vw !important;
+}
+.athing.comtr:nth-child(2n) td {
+  background: #222;
+}
+.commtext {
+  color: #ccc;
+}
+.comment {
+  max-width: 98% !important;
+  font-size: 85%;
+}
+.comment a {
+  color: rgb(74, 184, 228) !important;
+}
+.comment pre {
+  min-width: 98%;
+}
+/* fix issue with some comments not being full width */
+.comtr .default {
+  width: 100%;
+}
 
-  .comtr .default > div:first-child {
-    background: linear-gradient(90deg, #222222ff, #00000000);
-    padding: 2px 0 2px;
-  }
+.comtr .default > div:first-child {
+  background: linear-gradient(90deg, #222222ff, #00000000);
+  padding: 2px 0 2px;
+}
 
-  .athing.comtr > td:last-child {
-    border-bottom: 2px solid #111;
-  }
+.athing.comtr > td:last-child {
+  border-bottom: 2px solid #111;
+}
 
-  table[bgcolor="#f6f6ef"] {
-    background: rgb(166, 230, 255);
-    background: #f3f9fb;
-  }
+table[bgcolor="#f6f6ef"] {
+  background: rgb(166, 230, 255);
+  background: #f3f9fb;
+}
 
-  .morelink {
-    color: rgb(74, 184, 228) !important;
-    padding: 5px;
-    border-bottom: 3px solid rgb(74, 184, 228);
-  }
+.morelink {
+  color: rgb(74, 184, 228) !important;
+  padding: 5px;
+  border-bottom: 3px solid rgb(74, 184, 228);
+}
 
-  .fatitem .subtext > a {
-    color: #87c0cd;
-  }
-  .fatitem .subtext > a:last-child {
-    color: #ccc;
-  }
+.fatitem .subtext > a {
+  color: #87c0cd;
+}
+.fatitem .subtext > a:last-child {
+  color: #ccc;
+}
 
-  .ind img[width="0"] {
-    width: 1px !important;
-  }
-  .ind img[width="40"] {
-    width: 5px !important;
-  }
-  .ind img[width="80"] {
-    width: 9px !important;
-  }
-  .ind img[width="120"] {
-    width: 13px !important;
-  }
-  .ind img[width="160"] {
-    width: 17px !important;
-  }
-  .ind img[width="200"] {
-    width: 21px !important;
-  }
-  .ind img[width="240"] {
-    width: 25px !important;
-  }
-  .ind img[width="280"] {
-    width: 29px !important;
-  }
-  .ind img[width="320"] {
-    width: 33px !important;
-  }
-  .ind img[width="360"] {
-    width: 37px !important;
-  }
-  .ind img[width="400"] {
-    width: 41px !important;
-  }
-  .ind img[width="440"] {
-    width: 45px !important;
-  }
-  .ind img[width="480"] {
-    width: 49px !important;
-  }
-  .ind img[width="520"] {
-    width: 53px !important;
-  }
-  .ind img[width="560"] {
-    width: 57px !important;
-  }
-  .ind img[width="600"] {
-    width: 61px !important;
-  }
-  .ind img[width="640"] {
-    width: 65px !important;
-  }
+.ind img[width="0"] {
+  width: 1px !important;
+}
+.ind img[width="40"] {
+  width: 5px !important;
+}
+.ind img[width="80"] {
+  width: 9px !important;
+}
+.ind img[width="120"] {
+  width: 13px !important;
+}
+.ind img[width="160"] {
+  width: 17px !important;
+}
+.ind img[width="200"] {
+  width: 21px !important;
+}
+.ind img[width="240"] {
+  width: 25px !important;
+}
+.ind img[width="280"] {
+  width: 29px !important;
+}
+.ind img[width="320"] {
+  width: 33px !important;
+}
+.ind img[width="360"] {
+  width: 37px !important;
+}
+.ind img[width="400"] {
+  width: 41px !important;
+}
+.ind img[width="440"] {
+  width: 45px !important;
+}
+.ind img[width="480"] {
+  width: 49px !important;
+}
+.ind img[width="520"] {
+  width: 53px !important;
+}
+.ind img[width="560"] {
+  width: 57px !important;
+}
+.ind img[width="600"] {
+  width: 61px !important;
+}
+.ind img[width="640"] {
+  width: 65px !important;
+}
 
-  .comment-tree tr:nth-child(5n) .ind {
-    background: rgb(74, 184, 228);
-  }
-  .comment-tree tr:nth-child(5n + 1) .ind {
-    background: rgb(74, 164, 224);
-  }
-  .comment-tree tr:nth-child(5n + 2) .ind {
-    background: rgb(74, 144, 222);
-  }
-  .comment-tree tr:nth-child(5n + 3) .ind {
-    background: rgb(74, 124, 220);
-  }
-  .comment-tree tr:nth-child(5n + 4) .ind {
-    background: rgb(74, 104, 218);
-  }
+.comment-tree tr:nth-child(5n) .ind {
+  background: rgb(74, 184, 228);
+}
+.comment-tree tr:nth-child(5n + 1) .ind {
+  background: rgb(74, 164, 224);
+}
+.comment-tree tr:nth-child(5n + 2) .ind {
+  background: rgb(74, 144, 222);
+}
+.comment-tree tr:nth-child(5n + 3) .ind {
+  background: rgb(74, 124, 220);
+}
+.comment-tree tr:nth-child(5n + 4) .ind {
+  background: rgb(74, 104, 218);
+}
 
-  body.scrolled_down .fatitem {
-    display: block;
-    overflow-y: hidden;
-  }
-  body.scrolled_down .fatitem tr:nth-of-type(n + 3) {
-    display: none;
-  }
-  .fatitem {
-    background: #333;
-    box-shadow: 1px 1px 4px;
-    margin-bottom: 1px;
+body.scrolled_down .fatitem {
+  display: block;
+  overflow-y: hidden;
+}
+body.scrolled_down .fatitem tr:nth-of-type(n + 3) {
+  display: none;
+}
+.fatitem {
+  background: #333;
+  box-shadow: 1px 1px 4px;
+  margin-bottom: 1px;
 
-    width: 100%;
+  width: 100%;
 
-    /* fixes some cases where post height is bigger than viewport */
-    display: block;
-    max-height: 80vh;
-    overflow-y: auto;
-    /* /fix */
-  }
+  /* fixes some cases where post height is bigger than viewport */
+  display: block;
+  max-height: 80vh;
+  overflow-y: auto;
+  /* /fix */
+}
 
-  .fatitem pre {
-    max-width: 88vw;
-  }
+.fatitem pre {
+  max-width: 88vw;
 }
