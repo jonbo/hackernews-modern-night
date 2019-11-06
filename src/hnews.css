@@ -1,3 +1,8 @@
+:root {
+  /* --primary-color: rgb(74, 184, 228); */
+  --primary-color: rgb(252, 187, 67);
+}
+
 html[op] body {
   background: linear-gradient(45deg, #666, #111);
 }
@@ -9,12 +14,12 @@ html[op] body {
 }
 /* default main color of text */
 #hnmain td {
-  color: rgb(74, 184, 228);
+  color: var(--primary-color);
 }
 
 /* The top navbar */
 td[bgcolor="#ff6600"] {
-  background: rgb(74, 184, 228);
+  background: var(--primary-color);
 
   position: sticky;
   top: 0;
@@ -87,7 +92,7 @@ td[bgcolor="#ff6600"] {
   display: none;
 }
 span[id^="score"] {
-  color: rgb(74, 184, 228);
+  color: var(--primary-color);
 }
 
 .pagetop {
@@ -161,7 +166,7 @@ span[id^="score"] {
   display: none;
 }
 .fatitem a {
-  color: rgb(74, 184, 228);
+  color: var(--primary-color);
 }
 .fatitem td {
   color: rgb(236, 245, 255);
@@ -187,7 +192,7 @@ span[id^="score"] {
   font-size: 85%;
 }
 .comment a {
-  color: rgb(74, 184, 228) !important;
+  color: var(--primary-color) !important;
 }
 .comment pre {
   min-width: 98%;
@@ -215,9 +220,9 @@ table[bgcolor="#f6f6ef"] {
   text-align: right;
 }
 .morelink {
-  color: rgb(74, 184, 228) !important;
+  color: var(--primary-color) !important;
   padding: 5px;
-  border-bottom: 3px solid rgb(74, 184, 228);
+  border-bottom: 3px solid var(--primary-color);
   margin-right: 10px;
 }
 
@@ -280,20 +285,23 @@ table[bgcolor="#f6f6ef"] {
   width: 65px !important;
 }
 
+.comment-tree tr .ind {
+  background: var(--primary-color) !important;
+}
 .comment-tree tr:nth-child(5n) .ind {
-  background: rgb(74, 184, 228);
+  filter: brightness(1);
 }
 .comment-tree tr:nth-child(5n + 1) .ind {
-  background: rgb(74, 164, 224);
+  filter: brightness(1.1);
 }
 .comment-tree tr:nth-child(5n + 2) .ind {
-  background: rgb(74, 144, 222);
+  filter: brightness(1.2);
 }
 .comment-tree tr:nth-child(5n + 3) .ind {
-  background: rgb(74, 124, 220);
+  filter: brightness(1.3);
 }
 .comment-tree tr:nth-child(5n + 4) .ind {
-  background: rgb(74, 104, 218);
+  filter: brightness(1.4);
 }
 
 body.scrolled_down .fatitem {
