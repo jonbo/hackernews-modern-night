@@ -1,5 +1,5 @@
 :root {
-  /* --primary-color: rgb(74, 184, 228); */
+  --primary-color: rgb(74, 184, 228);
   --primary-color: rgb(252, 187, 67);
 }
 
@@ -290,19 +290,19 @@ table[bgcolor="#f6f6ef"] {
   background: var(--primary-color) !important;
 }
 .comment-tree tr:nth-child(5n) .ind {
-  filter: brightness(1);
+  filter: brightness(0.6);
 }
 .comment-tree tr:nth-child(5n + 1) .ind {
-  filter: brightness(1.1);
+  filter: brightness(0.75);
 }
 .comment-tree tr:nth-child(5n + 2) .ind {
-  filter: brightness(1.2);
+  filter: brightness(0.9);
 }
 .comment-tree tr:nth-child(5n + 3) .ind {
-  filter: brightness(1.3);
+  filter: brightness(1.05);
 }
 .comment-tree tr:nth-child(5n + 4) .ind {
-  filter: brightness(1.4);
+  filter: brightness(1.2);
 }
 
 body.scrolled_down .fatitem {
