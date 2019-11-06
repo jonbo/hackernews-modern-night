@@ -20,6 +20,9 @@ td[bgcolor="#ff6600"] {
   top: 0;
   z-index: 1;
 }
+.hnname a {
+  text-shadow: 0 0 5px #fff;
+}
 /* list of posts */
 .itemlist {
   width: 100%;
