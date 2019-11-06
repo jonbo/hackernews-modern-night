@@ -333,3 +333,14 @@ table[bgcolor="#f6f6ef"] {
 .comment-tree tr:nth-child(5n + 4) .ind {
   filter: brightness(1.2);
 }
+
+/* footer */
+#hnmain > tbody > tr:last-child td {
+  background: linear-gradient(180deg, #444, #1f1f1f);
+}
+#hnmain > tbody > tr:last-child td a {
+  color: #fff;
+}
+#hnmain > tbody > tr:last-child td[bgcolor="#ff6600"] {
+  display: none;
+}
