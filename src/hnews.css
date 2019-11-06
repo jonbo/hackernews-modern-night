@@ -227,7 +227,8 @@ table[bgcolor="#f6f6ef"] {
 }
 
 .fatitem .subtext > a {
-  color: #87c0cd;
+  color: var(--primary-color);
+  filter: brightness(1.1);
 }
 .fatitem .subtext > a:last-child {
   color: #ccc;
@@ -313,7 +314,7 @@ body.scrolled_down .fatitem tr:nth-of-type(n + 3) {
 }
 .fatitem {
   background: #333;
-  box-shadow: 1px 1px 4px;
+  box-shadow: 0 1px 4px #000;
   margin-bottom: 1px;
 
   width: 100%;
@@ -327,4 +328,9 @@ body.scrolled_down .fatitem tr:nth-of-type(n + 3) {
 
 .fatitem pre {
   max-width: 88vw;
+}
+
+/* default text in post page body */
+#hnmain .fatitem td {
+  color: #fff;
 }
