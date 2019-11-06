@@ -31,6 +31,7 @@ td[bgcolor="#ff6600"] {
 /* list of posts */
 .itemlist {
   width: 100%;
+  background: #333;
 }
 /* everything but the post title */
 #hnmain .itemlist .subtext {
@@ -61,7 +62,36 @@ td[bgcolor="#ff6600"] {
   position: sticky;
   top: 0;
   z-index: 1;
+
+  background: #333;
+  box-shadow: 0 1px 4px #000;
+  margin-bottom: 1px;
+
+  width: 100%;
+
+  /* fixes some cases where post height is bigger than viewport */
+  display: block;
+  max-height: 80vh;
+  overflow-y: auto;
+  /* /fix */
 }
+
+body.scrolled_down .fatitem {
+  display: block;
+  overflow-y: hidden;
+}
+body.scrolled_down .fatitem tr:nth-of-type(n + 3) {
+  display: none;
+}
+
+.fatitem pre {
+  max-width: 88vw;
+}
+/* default text in post page body */
+#hnmain .fatitem td {
+  color: #fff;
+}
+
 .fatitem .athing .title:not([valign="top"]) {
   background: #333;
   font-weight: bold;
@@ -69,6 +99,28 @@ td[bgcolor="#ff6600"] {
 .fatitem tr[style="height:10px"] {
   display: none;
 }
+
+.fatitem ~ br {
+  display: none;
+}
+.fatitem a {
+  color: var(--primary-color);
+}
+.fatitem td {
+  color: rgb(236, 245, 255);
+}
+.fatitem tr:nth-child(4) td {
+  font-size: 70% !important;
+}
+
+.fatitem .subtext > a {
+  color: var(--primary-color);
+  filter: brightness(1.1);
+}
+.fatitem .subtext > a:last-child {
+  color: #ccc;
+}
+
 [action="comment"] textarea {
   height: 20px;
   background: #222;
@@ -115,9 +167,6 @@ span[id^="score"] {
   border-bottom: 2px solid #000;
 }
 
-.itemlist {
-  background: #333;
-}
 .itemlist a u,
 .itemlist .hnmore a {
   color: white !important;
@@ -162,18 +211,6 @@ span[id^="score"] {
   text-shadow: 0 0 3px #000;
 }
 
-.fatitem ~ br {
-  display: none;
-}
-.fatitem a {
-  color: var(--primary-color);
-}
-.fatitem td {
-  color: rgb(236, 245, 255);
-}
-.fatitem tr:nth-child(4) td {
-  font-size: 70% !important;
-}
 .comment-tree {
   background: #333;
   min-width: 100%;
@@ -224,14 +261,6 @@ table[bgcolor="#f6f6ef"] {
   padding: 5px;
   border-bottom: 3px solid var(--primary-color);
   margin-right: 10px;
-}
-
-.fatitem .subtext > a {
-  color: var(--primary-color);
-  filter: brightness(1.1);
-}
-.fatitem .subtext > a:last-child {
-  color: #ccc;
 }
 
 .ind img[width="0"] {
@@ -303,34 +332,4 @@ table[bgcolor="#f6f6ef"] {
 }
 .comment-tree tr:nth-child(5n + 4) .ind {
   filter: brightness(1.2);
-}
-
-body.scrolled_down .fatitem {
-  display: block;
-  overflow-y: hidden;
-}
-body.scrolled_down .fatitem tr:nth-of-type(n + 3) {
-  display: none;
-}
-.fatitem {
-  background: #333;
-  box-shadow: 0 1px 4px #000;
-  margin-bottom: 1px;
-
-  width: 100%;
-
-  /* fixes some cases where post height is bigger than viewport */
-  display: block;
-  max-height: 80vh;
-  overflow-y: auto;
-  /* /fix */
-}
-
-.fatitem pre {
-  max-width: 88vw;
-}
-
-/* default text in post page body */
-#hnmain .fatitem td {
-  color: #fff;
 }
