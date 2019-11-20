@@ -114,7 +114,7 @@ body.scrolled_down .fatitem tr:nth-of-type(n + 3) {
 }
 
 .fatitem .subtext > a {
-  color: var(--primary-color);
+  color: var(--primary-color) !important;
   filter: brightness(1.1);
 }
 .fatitem .subtext > a:last-child {
@@ -174,7 +174,7 @@ span[id^="score"] {
 
 .itemlist a[href^="item?id="],
 .subtext a[href^="item?id="] {
-  color: #ccc;
+  color: #ccc !important;
 }
 
 .itemlist .athing:nth-child(2n),
@@ -218,10 +218,11 @@ span[id^="score"] {
 .comment-tree .comment a {
   max-width: 70vw !important;
 }
+
 .athing.comtr:nth-child(2n) td {
   background: #222;
 }
-.commtext {
+.comment .commtext {
   color: #ccc;
 }
 .comment {
