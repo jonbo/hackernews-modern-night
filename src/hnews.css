@@ -218,6 +218,10 @@ span[id^="score"] {
 .comment-tree .comment a {
   max-width: 70vw !important;
 }
+.comment-tree .hnuser {
+  color: var(--primary-color) !important;
+  filter: brightness(1.1);
+}
 
 .athing.comtr:nth-child(2n) td {
   background: #222;
