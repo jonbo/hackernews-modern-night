@@ -33,6 +33,13 @@ td[bgcolor="#ff6600"] {
   width: 100%;
   background: #333;
 }
+
+@media only screen and (max-width: 750px) and (min-width: 300px) {
+  .itemlist {
+    padding-right: 3px;
+  }
+}
+
 /* everything but the post title */
 #hnmain .itemlist .subtext {
   /* make it text unselectable for easier long pressing on mobile */
