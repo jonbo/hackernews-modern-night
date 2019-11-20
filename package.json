@@ -1,7 +1,7 @@
 {
   "name": "hackernews-modern-night",
   "private": true,
-  "version": "1.4.0",
+  "version": "1.4.1",
   "license": "MIT",
   "dependencies": {
     "web-ext": "^3.0.0"
