@@ -1,12 +1,13 @@
+// Hide post content body when scrolling down, and revealing on up
 const SCROLLED_UP = -1;
 const SCROLLED_DOWN = 1;
-const SCROLL_THRESHOLD = 50;
+const SCROLL_THRESHOLD = 25;
 
 let relativePageY = -1;
 let direction = 0;
 
 document.addEventListener("scroll", function onScroll(e) {
-  const pageY = e.pageY;
+  const pageY = window.pageYOffset;
   const previousDirection = direction;
 
   const isTopOfPage = pageY === 0;
@@ -28,18 +29,25 @@ document.addEventListener("scroll", function onScroll(e) {
   if (pageY > relativePageY + SCROLL_THRESHOLD) {
     direction = SCROLLED_DOWN;
     relativePageY = pageY;
-    if (previousDirection !== direction) onScrollDirectionChange(direction);
-  } else if (pageY < relativePageY - SCROLL_THRESHOLD * 10) {
+    onScrollDirectionChange(direction);
+  } else if (pageY < relativePageY - SCROLL_THRESHOLD) {
     direction = SCROLLED_UP;
     relativePageY = pageY;
-    if (previousDirection !== direction) onScrollDirectionChange(direction);
+    onScrollDirectionChange(direction);
   }
 });
 
+let ignoreScroll = false;
 function onScrollDirectionChange(direction) {
+  if (ignoreScroll) return;
+
   if (direction === SCROLLED_DOWN) {
     document.body.classList.add("scrolled_down");
   } else {
     document.body.classList.remove("scrolled_down");
   }
+
+  // Ignore scroll events until after repaints since that causes some
+  ignoreScroll = true;
+  setTimeout(() => (ignoreScroll = false), 200);
 }
