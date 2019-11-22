@@ -52,14 +52,16 @@ td[bgcolor="#ff6600"] {
 }
 
 /* the "[n] comments" text */
-.itemlist .subtext > a[href^="item"]:last-child {
-  float: right;
-  color: #fff;
+@media screen and (max-width: 751px) {
+  .itemlist .subtext > a[href^="item"]:last-child {
+    float: right;
+    color: #fff;
 
-  /* make link easier to click on mobile */
-  margin: -6px;
-  padding: 6px;
-  padding-right: 12px;
+    /* make link easier to click on mobile */
+    margin: -6px;
+    padding: 6px;
+    padding-right: 12px;
+  }
 }
 
 /* On the post page, the expanded post information including post body and comment box */
