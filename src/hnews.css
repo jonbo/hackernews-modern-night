@@ -358,3 +358,27 @@ table[bgcolor="#f6f6ef"] {
 #hnmain > tbody > tr:last-child td[bgcolor="#ff6600"] {
   display: none;
 }
+
+/* Our custom Theming dialog */
+#customizeDialog {
+  position: fixed;
+  display: flex;
+
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+}
+#customizeDialog .color-choose {
+  padding: 10px;
+  border-radius: 10px;
+  background: #000c;
+  margin: auto;
+}
+#customizeBtn {
+  cursor: pointer;
+}
+.hidden {
+  display: none !important;
+}

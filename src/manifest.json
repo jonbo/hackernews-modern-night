@@ -9,7 +9,7 @@
     {
       "matches": ["*://news.ycombinator.com/*"],
       "css": ["hnews.css"],
-      "js": ["hnews.js"],
+      "js": ["hnews.js", "theme.js"],
       "run_at": "document_start"
     }
   ]
