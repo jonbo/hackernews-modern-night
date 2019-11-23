@@ -5,6 +5,7 @@
 
 html[op] body {
   background: linear-gradient(45deg, #666, #111);
+  overflow-x: hidden; /* quickfix: prevent a small horizontal scroll issue*/
 }
 @media screen and (min-width: 751px) {
   #hnmain {
