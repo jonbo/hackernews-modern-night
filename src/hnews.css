@@ -373,7 +373,8 @@ table[bgcolor="#f6f6ef"] {
 #customizeDialog .color-choose {
   padding: 10px;
   border-radius: 10px;
-  background: #000c;
+  background: #000e;
+  color: #ccc;
   margin: auto;
 }
 #customizeBtn {
