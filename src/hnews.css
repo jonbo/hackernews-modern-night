@@ -267,9 +267,11 @@ table[bgcolor="#f6f6ef"] {
   background: #f3f9fb;
 }
 
-/* the pagination link */
-.morespace + tr .title {
-  text-align: right;
+/* the pagination link (on mobile) */
+@media screen and (max-width: 751px) {
+  .morespace + tr .title {
+    text-align: right;
+  }
 }
 .morelink {
   color: var(--primary-color) !important;
