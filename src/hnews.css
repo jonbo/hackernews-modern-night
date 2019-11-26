@@ -250,7 +250,8 @@ span[id^="score"] {
   min-width: 98%;
 }
 /* fix issue with some comments not being full width */
-.comtr .default {
+.comtr .default,
+.comtr table {
   width: 100%;
 }
 
