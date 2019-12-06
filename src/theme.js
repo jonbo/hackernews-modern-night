@@ -8,10 +8,10 @@ function getPrimaryColor() {
   return localStorage.getItem("primary-color");
 }
 
-function main() {
-  let customPrimaryColor = getPrimaryColor();
-  if (customPrimaryColor) setPrimaryColor(customPrimaryColor);
+let customPrimaryColor = getPrimaryColor();
+if (customPrimaryColor) setPrimaryColor(customPrimaryColor);
 
+function main() {
   // Add a button the navbar to toggle a custom color choose dialog
   const navbar = document.querySelector("#hnmain .pagetop");
   if (!navbar) return;
