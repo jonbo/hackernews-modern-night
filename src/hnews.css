@@ -186,6 +186,10 @@ span[id^="score"] {
 .subtext a[href^="item?id="] {
   color: #ccc !important;
 }
+/* any "n comments" section */
+.subtext > a:last-child {
+  border-bottom: 1px dotted var(--primary-color);
+}
 
 .itemlist .athing:nth-child(2n),
 .itemlist .athing:nth-child(2n) + tr {
