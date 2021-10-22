@@ -13,9 +13,9 @@ html[op] body {
     border: 2px solid #222;
   }
 }
-/* default main color of text */
-#hnmain td {
-  color: var(--primary-color);
+/* default main color of titles */
+#hnmain .title a {
+  color: #eee;
 }
 
 /* The top navbar */
@@ -113,7 +113,7 @@ body.scrolled_down .fatitem tr:nth-of-type(n + 3) {
 .fatitem ~ br {
   display: none;
 }
-.fatitem a {
+.fatitem a:link {
   color: var(--primary-color);
 }
 .fatitem td {
