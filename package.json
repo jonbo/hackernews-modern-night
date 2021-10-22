@@ -4,7 +4,7 @@
   "version": "1.5.1",
   "license": "MIT",
   "devDependencies": {
-    "web-ext": "^3.2.1"
+    "web-ext": "^6.5.0"
   },
   "scripts": {
     "start": "web-ext run -s ./src --start-url https://news.ycombinator.com/",
