@@ -21,10 +21,6 @@ html[op] body {
 /* The top navbar */
 td[bgcolor="#ff6600"] {
   background: var(--primary-color);
-
-  position: sticky;
-  top: 0;
-  z-index: 1;
 }
 .hnname a {
   text-shadow: 0 0 5px #fff;
@@ -81,17 +77,19 @@ td[bgcolor="#ff6600"] {
 
   /* fixes some cases where post height is bigger than viewport */
   display: block;
-  max-height: 80vh;
+  max-height: 50vh;
   overflow-y: auto;
   /* /fix */
+
+  transition: max-height 0.7s ease-in-out;
+  scroll-behavior: smooth;
 }
 
 body.scrolled_down .fatitem {
   display: block;
   overflow-y: hidden;
-}
-body.scrolled_down .fatitem tr:nth-of-type(n + 3) {
-  display: none;
+
+  box-shadow: unset;
 }
 
 .fatitem pre {
