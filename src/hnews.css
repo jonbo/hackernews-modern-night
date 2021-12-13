@@ -215,11 +215,12 @@ span[id^="score"] {
   color: #aaa;
   font-size: 80%;
 }
-/* post title on list of posts */
-.athing .storylink {
+/* post title on list of posts and postpage */
+.athing .titlelink {
   color: #eee;
   font-family: "Roboto", sans-serif;
-  font-size: 102%;
+  font-size: 97%;
+  padding: 0 2px;
   text-shadow: 0 0 3px #000;
 }
 
