@@ -398,3 +398,7 @@ table[bgcolor="#f6f6ef"] {
   color: var(--primary-color);
   filter: grayscale(0.75) brightness(1.3);
 }
+
+.votelinks {
+  min-width: unset !important;
+}
