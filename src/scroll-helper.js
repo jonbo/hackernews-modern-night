@@ -56,5 +56,5 @@ function onScrollDirectionChange(direction) {
 
   // Ignore scroll events until after repaints since that causes some
   ignoreScroll = true;
-  setTimeout(() => (ignoreScroll = false), 200);
+  setTimeout(() => (ignoreScroll = false), 1000);
 }
