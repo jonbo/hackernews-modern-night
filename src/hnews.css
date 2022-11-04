@@ -403,3 +403,10 @@ table[bgcolor="#f6f6ef"] {
 .votelinks {
   min-width: unset !important;
 }
+
+
+/* Favicons feature */
+.domain-icon {
+  padding-right: 4px;
+  vertical-align: middle; 
+}

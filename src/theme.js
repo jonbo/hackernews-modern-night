@@ -38,8 +38,9 @@ function main() {
         <div>
             <input type="radio" id="primary-color-custom" name="primary-color" value="custom">
             <label for="primary-color-custom">
-                Custom <input type="color" id="primary-color-custom-color" value="${getPrimaryColor() ||
-                  "#b0f892"}"  />
+                Custom <input type="color" id="primary-color-custom-color" value="${
+                  getPrimaryColor() || "#b0f892"
+                }"  />
             </label>
         </div>
     </div>
@@ -75,6 +76,22 @@ function main() {
   customizeBtn.addEventListener("click", function toggleCustomize() {
     customizeDialog.classList.toggle("hidden");
   });
+
+  addFavicons();
 }
 
 document.addEventListener("DOMContentLoaded", main);
+
+function addFavicons() {
+  for (let link of document.querySelectorAll(".titleline > a")) {
+    const domain = new URL(link.href).hostname;
+    const imageUrl = `https://icons.duckduckgo.com/ip3/${domain}.ico`;
+    const image = document.createElement("img");
+    image.src = imageUrl;
+    image.width = 16;
+    image.height = 16;
+    image.classList.add("domain-icon");
+
+    link.prepend(image);
+  }
+}
