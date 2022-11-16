@@ -236,9 +236,9 @@ span[id^="score"] {
   filter: brightness(1.1);
 }
 
-.athing.comtr:nth-child(2n) td {
+/* .athing.comtr:nth-child(2n) td {
   background: #222;
-}
+} */
 .comment .commtext {
   color: #ccc;
 }
@@ -410,3 +410,26 @@ table[bgcolor="#f6f6ef"] {
   padding-right: 4px;
   vertical-align: middle; 
 }
+
+/* 2022-11-14 site change fixes.. todo cleanup old stuff probably not needed anymore (.itemlist) */
+#hnmain td:not([bgcolor="#ff6600"]) table {
+  width: 100%;
+  background: #2f2f2f;
+}
+#hnmain table:not(.comment-tree) .athing:nth-child(2n),
+#hnmain table:not(.comment-tree) .athing:nth-child(2n) + tr {
+  background: #222;  
+}
+
+#hnmain table:not(.comment-tree) .athing:nth-child(2n) td {
+  border-top: 2px solid #111;
+  padding-top: 3px;
+}
+#hnmain table:not(.comment-tree) .athing:nth-child(2n) + tr td {
+  border-bottom: 2px solid #111;
+  padding-bottom: 3px;
+}
+#hnmain .athing.comtr:nth-child(2n) table {
+  background: #222; 
+}
+/* end 2022-11-14 fixes */ 
